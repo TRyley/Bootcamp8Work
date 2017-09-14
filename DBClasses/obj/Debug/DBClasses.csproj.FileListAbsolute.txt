@@ -1,0 +1,7 @@
+c:\users\uktryl\documents\visual studio 2015\Projects\LetsLookAtDatabases\DBClasses\bin\Debug\DBClasses.dll.config
+c:\users\uktryl\documents\visual studio 2015\Projects\LetsLookAtDatabases\DBClasses\bin\Debug\DBClasses.dll
+c:\users\uktryl\documents\visual studio 2015\Projects\LetsLookAtDatabases\DBClasses\bin\Debug\DBClasses.pdb
+c:\users\uktryl\documents\visual studio 2015\Projects\LetsLookAtDatabases\DBClasses\bin\Debug\MySql.Data.dll
+c:\users\uktryl\documents\visual studio 2015\Projects\LetsLookAtDatabases\DBClasses\obj\Debug\DBClasses.csprojResolveAssemblyReference.cache
+c:\users\uktryl\documents\visual studio 2015\Projects\LetsLookAtDatabases\DBClasses\obj\Debug\DBClasses.dll
+c:\users\uktryl\documents\visual studio 2015\Projects\LetsLookAtDatabases\DBClasses\obj\Debug\DBClasses.pdb

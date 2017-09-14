@@ -1,0 +1,28 @@
+﻿@model DBClasses.ViewModels.CountryMedalsViewModel
+
+<!DOCTYPE html>
+<head>
+    <title>Olympic Leaderboard</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Leaderboard</h1>
+        <table style="width: 100%;">
+            <tr>
+                <th>Country Name</th>
+                <th>Medals Won</th>
+            </tr>
+            @foreach (var country in Model.countryMedals)
+            {
+                <tr>
+
+                    <td>@country.CountryName</td>
+                    <td>@country.MedalCount</td>
+
+                </tr>
+            }
+        </table>
+    </div>
+</body>

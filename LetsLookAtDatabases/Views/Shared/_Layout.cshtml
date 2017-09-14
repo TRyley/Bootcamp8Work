@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet"/>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+
+    <title>Olympics - @ViewBag.Title</title>
+</head>
+<body style="background-color: white">
+    <div class="nav navbar-fixed-top" style="background-color: deeppink; padding: 0; margin: 0;">
+        <div class="nav-tabs">
+            <div class="container">
+                <ul class="list-inline list-unstyled" style="padding-left: 50px;">
+                    <li style="border-left: 3px; border-left-color: black">
+                        <a href="~/Home/Index" style="font-size: 30px; color: black; text-decoration: none; padding: 10px;">Home</a>
+                    </li>
+                    <li style="border-left: 3px; border-left-color: black">
+                        <a href="~/Home/Leaderboard" style="font-size: 30px; color: black; text-decoration: none; padding: 10px;">Country Leaderboard</a>
+                    </li>
+                    <li style="border-left: 3px; border-left-color: black">
+                        <a href="~/Home/Athletes"  style="font-size: 30px; color: black; text-decoration: none;  padding: 10px;">View Athletes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        @RenderBody()
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>

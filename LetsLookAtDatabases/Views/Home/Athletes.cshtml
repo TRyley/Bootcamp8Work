@@ -1,0 +1,30 @@
+﻿@model DBClasses.ViewModels.AthleteListViewModel
+<!DOCTYPE html>
+<body>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <td><button>@Html.ActionLink("Name +", "Athletes", "Home", new {sort = "nameDec"}, null)</button><button>@Html.ActionLink("Name -", "Athletes", "Home", new { sort = "nameAsc" }, null)</button></td>
+                    <td><button>@Html.ActionLink("Country +", "Athletes", "Home", new { sort = "countryDec" }, null)</button><button>@Html.ActionLink("Country -", "Athletes", "Home", new { sort = "countryAsc" }, null)</button></td>
+                    <td><button>@Html.ActionLink("Age +", "Athletes", "Home", new { sort = "ageDec" }, null)</button><button>@Html.ActionLink("Age -", "Athletes", "Home", new { sort = "ageAsc" }, null)</button></td>
+                    <td><button>@Html.ActionLink("DOB +", "Athletes", "Home", new { sort = "DOBDec" }, null)</button><button>@Html.ActionLink("DOB -", "Athletes", "Home", new { sort = "DOBAsc" }, null)</button></td>
+                    <td><button>@Html.ActionLink("Sex M", "Athletes", "Home", new { sort = "sexDec" }, null)</button><button>@Html.ActionLink("Sex F", "Athletes", "Home", new { sort = "sexAsc" }, null)</button></td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var athlete in Model.Athletes)
+                {
+                <tr>
+                    <td>@athlete.FullName</td>
+                    <td>@athlete.CountryName</td>
+                    <td>@athlete.Age</td>
+                    <td>@athlete.DOB.ToShortDateString()</td>
+                    <td>@athlete.Sex</td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+
